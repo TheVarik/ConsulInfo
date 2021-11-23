@@ -1,15 +1,13 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta class="js-meta-viewport" name="viewport" content="width=device-width, height=device-height, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <title>Yanicode :: Главная</title>
-    <link rel="stylesheet" href="/local/templates/inner/assets/template_styles.css">
+<title><?php echo $APPLICATION->ShowTitle() ?></title>
+    <?php $APPLICATION->ShowHead(); ?>
 </head>
 
 <body>
+<div id="panel"><?php $APPLICATION->ShowPanel() ?></div>
     <header class="header">
         <div class="container">
             <div class="header-wrapper">
@@ -29,6 +27,7 @@
                     <div class="header__phone">
                         <a href="tel:+79114510616">+79114510616</a>
                     </div>
+
                 </div>
             </div>
         </div>

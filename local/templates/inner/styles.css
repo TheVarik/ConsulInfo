@@ -1851,4 +1851,28 @@ html {
     @media all and (max-width: 767px) {
       .article-consent {
         padding: 120px 0 20px 0; } }
-  
+    /*Content block*/
+  .content-block
+  {
+    border-top-color:#8a8a8a;
+    background:#8a8a8a;
+    color: #ffffff;
+    margin-bottom:5px;
+    width:100%;
+  }
+
+  .content-block-head
+  {
+    font-weight:bold;
+    color:white;
+    font-size:95%;
+    margin:2px;
+    padding: 5px 9px;
+  }
+
+  .content-block-body
+  {
+    color: #ffffff;
+    padding:4px 5px;
+    width:100%;
+  }

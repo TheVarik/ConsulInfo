@@ -2,6 +2,18 @@
 <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
+<div class="content-block">
+          <div class="content-block-head">Авторизация</div>
+        
+          <div class="content-block-body"><?$APPLICATION->IncludeComponent(
+	"bitrix:system.auth.form",
+	".default",
+	Array(
+		"REGISTER_URL" => "/auth/", 
+		"PROFILE_URL" => "/personal/profile/" 
+	)
+);?></div>
+        </div>
                 <a href="./index.html" class="footer__logo">
                     <img width="232" height="71" src="/local/templates/inner/assets/images/svg/logo-yanicode.svg" alt="yanicode">
                 </a>
@@ -200,5 +212,6 @@
     <script src="/local/templates/inner/assetsassets/js/vendor/inputmask.min.js"></script>
     <script src="/local/templates/inner/assetsassets/js/vendor/swiper-bundle.min.js"></script>
     <script src="/local/templates/inner/assetsassets/js/build.js"></script>
+
 </body>
 </html>
