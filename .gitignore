@@ -1,10 +1,9 @@
-/.idea/
-/.vscode/
+/.idea
+/.vscode
 /local/
 /upload/
 
-/assets/images
-/assets/fonts
+/assets/
 
 /*.txt
 /*.gif
