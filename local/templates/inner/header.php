@@ -4,11 +4,13 @@
 <head>
 <title><?php echo $APPLICATION->ShowTitle() ?></title>
     <?php $APPLICATION->ShowHead(); ?>
+<link rel="stylesheet" href="/local/templates/inner/assets/template_styles.css"
 </head>
 
 <body>
 <div id="panel"><?php $APPLICATION->ShowPanel() ?></div>
     <header class="header">
+    
         <div class="container">
             <div class="header-wrapper">
                 <a href="./index.html" class="header__logo">
