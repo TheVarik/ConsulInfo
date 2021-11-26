@@ -13,7 +13,7 @@
     
         <div class="container">
             <div class="header-wrapper">
-                <a href="./index.html" class="header__logo">
+                <a href="./index.php" class="header__logo">
                     <img width="300" height="92" src="/local/templates/inner/assets/images/svg/logo-yanicode.svg" alt="yanicode">
                 </a>
                 <div class="header__burger header__burger_close">
@@ -22,15 +22,25 @@
                     <span class="burger-line"></span>
                 </div>
                 <div class="header-nav">
-                    <nav class="nav-list">
-                        <a href="./index.html" class="nav-list__item">ГЛАВНАЯ</a>
-                        <a href="./services.html" class="nav-list__item">УСЛУГИ</a>
-                    </nav>
-                    <div class="header__phone">
-                        <a href="tel:+79114510616">+79114510616</a>
-                    </div>
-
-                </div>
+        <nav class="nav-list">
+				 <?$APPLICATION->IncludeComponent(
+                    "bitrix:menu",
+                    "Yanicode",
+                    Array(
+                        "ALLOW_MULTI_SELECT" => "N",
+                        "CHILD_MENU_TYPE" => "left",
+                        "DELAY" => "N",
+                        "MAX_LEVEL" => "1",
+                        "MENU_CACHE_GET_VARS" => array(""),
+                        "MENU_CACHE_TIME" => "3600",
+                        "MENU_CACHE_TYPE" => "N",
+                        "MENU_CACHE_USE_GROUPS" => "Y",
+                        "ROOT_MENU_TYPE" => "left",
+                        "USE_EXT" => "N"
+                    )
+                    );?>
+        </nav>
+            </div>
             </div>
         </div>
     </header>

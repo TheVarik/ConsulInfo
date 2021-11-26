@@ -5,24 +5,21 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 $APPLICATION->SetTitle("Каталог книг");
 ?><main class="website-workarea"> <section class="banner banner_before1" style="background-image: url('/local/templates/inner/assets/images/banner_blog.jpg');">
 <div class="banner-wrapper">
-	<div class="container">
-		<div class="banner__content">
-			<p>
-				 Более 20-ти лет управляю<br>
-				 творческими проектами в<br>
-				 брендинге.
-			</p>
-			<p>
- <b class="text_gold">
-				Моя личная миссия: </b>делать<br>
-				 вас богаче, а ваших<br>
-				 клиентов счастливее!
-			</p>
-		</div>
-	</div>
-</div>
-<div class="container">
-<div class="stages">
+                <div class="container">
+                    <div class="banner__content">
+                        <p>Более 20-ти лет управляю<br />
+                            творческими проектами в<br />
+                            брендинге.</p>
+                        <p><b class="text_gold">
+                                Моя личная миссия: </b>делать<br />
+                            вас богаче, а ваших<br />
+                            клиентов счастливее!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="stages">
                     <div class="stages__item">
                         <div class="stages__step">01</div>
                         <div class="stages__desc-step">АУДИТ</div>
@@ -43,8 +40,9 @@ $APPLICATION->SetTitle("Каталог книг");
                         <div class="stages__step">05</div>
                         <div class="stages__desc-step">КОММУНИКАЦИИ</div>
                     </div>
-</div>
-</section>
+                </div>
+            </div>
+ </section>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
 	"Yanicode",
@@ -61,6 +59,7 @@ $APPLICATION->SetTitle("Каталог книг");
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
+		"COMPONENT_TEMPLATE" => "Yanicode",
 		"DETAIL_URL" => "",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "Y",
@@ -68,16 +67,16 @@ $APPLICATION->SetTitle("Каталог книг");
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array("",""),
+		"FIELD_CODE" => array(0=>"",1=>"",),
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "3",
-		"IBLOCK_TYPE" => "news",
+		"IBLOCK_ID" => "14",
+		"IBLOCK_TYPE" => "myBlog",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"MEDIA_PROPERTY" => "",
 		"MESSAGE_404" => "",
-		"NEWS_COUNT" => "2",
+		"NEWS_COUNT" => "5",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -88,7 +87,7 @@ $APPLICATION->SetTitle("Каталог книг");
 		"PARENT_SECTION" => "",
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"PROPERTY_CODE" => array("",""),
+		"PROPERTY_CODE" => array(0=>"",1=>"",),
 		"SEARCH_PAGE" => "/search/",
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
@@ -107,5 +106,4 @@ $APPLICATION->SetTitle("Каталог книг");
 		"USE_RATING" => "N",
 		"USE_SHARE" => "N"
 	)
-);?>
- </main><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?> </main><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
