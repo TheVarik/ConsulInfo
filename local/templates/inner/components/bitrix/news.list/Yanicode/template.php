@@ -27,17 +27,13 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
                         <div class="blog__date">
                             <?if ($arItem["ACTIVE_FROM"] == ""):?>
                                 <?echo $arItem["TIMESTAMP_X"];?>
-                                <!--
                         <?php /* echo '<pre>' ?>
                         <?php print_r($arItem); ?>
                         <?php echo '</pre>' ?>
-                        -->
-
                             <?*/else:?>
                         <? echo $arItem["DISPLAY_DATE"];?>
                         <? echo $arItem["ACTIVE_DATE_FORMAT"];?>
                         <? echo $arItem["ACTIVE_FROM"];?>
-                    
                         <?endif?>
                     </div>
                         <div class="blog_article">
